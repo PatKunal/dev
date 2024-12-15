@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const confirmEmail = confirm('Are you sure you want to email me?');
         
         if (confirmEmail) {
-            window.location.href = mailto:${email};
+            window.location.href = `mailto:${email}`;
         }
     });
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const confirmLinkedIn = confirm('Are you sure you want to visit my LinkedIn profile?');
 
         if (confirmLinkedIn) {
-            window.open(linkedinUrl, 'https://www.linkedin.com/feed/');
+            window.open(linkedinUrl, '_blank');
         }
     });
 });
